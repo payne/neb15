@@ -1,3 +1,4 @@
+/**** Function definition ****/
 
 //def square(a: Int) = a * a
 //square(2)
@@ -14,6 +15,8 @@
 //}
 
 //def pyth(a: Int, b: Int): Int = {val aSq = a * a; val bSq = b * b; aSq + bSq }
+
+/**** Function Literal ****/
 
 //(a: Int) => a * a
 

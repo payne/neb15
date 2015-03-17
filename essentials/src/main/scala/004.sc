@@ -1,7 +1,6 @@
 /**** Closure ****/
 
 //val factor = 3
-
 //val triple = (x: Double) => x * factor
 
 //triple(10)
