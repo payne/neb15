@@ -15,7 +15,11 @@
 
 //sumTwoOps(x => _*_, 2, 3) // FAILS
 
+//def mulBy(factor: Double) = (x: Double) => x * factor
 
+//val triple = mulBy(3)
+
+//triple(10)
 
 
 
