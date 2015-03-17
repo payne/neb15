@@ -1,3 +1,4 @@
+/**** Higher-order functions ****/
 
 //def sumTwoOps(f: Int => Int, a: Int, b: Int): Int = {
 //  f(a) + f(b)
@@ -14,6 +15,8 @@
 //sumTwoOps( 2 * _ , 2, 3)
 
 //sumTwoOps(x => _*_, 2, 3) // FAILS
+
+/**** Returning a function ****/
 
 //def mulBy(factor: Double) = (x: Double) => x * factor
 
