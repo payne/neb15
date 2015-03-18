@@ -16,10 +16,12 @@
 
 //mulBy(3)(10)
 
+// Curried function
 //def mulBy(factor: Double)(x: Int) = x * factor
 
 //mulBy(3)(10)
 
+// Partial application
 //val triple = mulBy(3) _
 
 //triple(10)
