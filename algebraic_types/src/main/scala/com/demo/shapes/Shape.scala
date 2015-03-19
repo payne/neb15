@@ -8,3 +8,10 @@ case class Rectangle(length: Double, width: Double) extends Shape
 // The implementation is not here.
 // Implementation is located in worksheet 001.sc
 // where we use this type.
+
+// This relates to the expression problem!
+
+// This is not dynamic dispatch
+// This is using pattern matching to do this.
+
+
