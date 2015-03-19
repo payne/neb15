@@ -37,7 +37,15 @@ for {
   ch <- List('a','b','c')
   b <- List(true, false)
 } yield (n, ch, b)
+// Note, it is yielding a list of tuples
 // List((1,a,true), (1,a,false), (1,b,true), (1,b,false), (1,c,true), (1,c,false), (2,a,true), (2,a,false), (2,b,true), (2,b,false), (2,c,true), (2,c,false))
+
+// There is a moral to this.
+// There is pain if you do it this way
+// then there is the for comprehension.
+
+// Eric says this different than Haskell's zipper
+// This is like the do notation in Haskell
 
 
 
