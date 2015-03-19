@@ -7,6 +7,8 @@ package com.demo.one
 import RomanNum._
 import org.scalatest.FunSuite
 
+// === is a scalatest operator not a scala thing
+// it is like scala's == with extra pazaz
 
 class RomanSpec extends FunSuite {
   test("Convert 1 to I") {
