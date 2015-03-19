@@ -1,9 +1,11 @@
 /**** Closure ****/
 
-//val factor = 3
-//val triple = (x: Double) => x * factor
+// a closure is a function that contains a free variable that is packaged
+// with the function that is returned.   Here, factor is the free variable.
+val factor = 3
+val triple = (x: Double) => x * factor
 
-//triple(10)
+triple(10)
 
 //def mulBy(factor: Double) = {
 //  def foo(x: Int) = x * factor

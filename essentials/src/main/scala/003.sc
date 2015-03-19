@@ -9,6 +9,7 @@ def sumTwoOps(f: Int => Int, a: Int, b: Int): Int = {
 //sumTwoOps(sq, 2, 3)
 
 // Here we're passing in anonymous function.
+// => is read "rocket" by Eric.
 sumTwoOps(x => x*x, 2, 3)
 
 sumTwoOps( x => 2 * x, 2, 3)
@@ -21,11 +22,9 @@ sumTwoOps( 2 * _ , 2, 3)
 
 /**** Returning a function ****/
 
-//def mulBy(factor: Double) = (x: Double) => x * factor
-
-//val triple = mulBy(3)
-
-//triple(10)
+def mulBy(factor: Double) = (x: Double) => x * factor
+val triple = mulBy(3)
+triple(10)
 
 
 
