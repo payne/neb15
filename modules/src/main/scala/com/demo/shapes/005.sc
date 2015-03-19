@@ -1,17 +1,18 @@
-//import com.demo.shapes.Circle4
+import com.demo.shapes.Circle4
 
-//val circ = Circle4(20)
+val circ = Circle4(20)
 
-//circ.area
+circ.area
 
-//circ.radius // Field is accessible, but can't be changed
+circ.radius // Field is accessible, but can't be changed
+// even though there is no val in the "case class"
 
-//circ.toString
+circ.toString
 
 
-//val circ2 = Circle4(20)
+val circ2 = Circle4(20)
 
-//circ2 == circ
+circ2 == circ
 
 
 
