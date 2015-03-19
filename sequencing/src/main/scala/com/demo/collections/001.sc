@@ -6,6 +6,8 @@
 // it is idomatic for code to look different when using the collections API
 // than when you're using your own code.
 
+// These will be OO looking things but we get something new back everytime.
+
 //List(1,2)
 //List('a','b','c')
 
