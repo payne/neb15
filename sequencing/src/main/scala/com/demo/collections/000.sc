@@ -1,6 +1,7 @@
 // map foldRight foldLeft are combinators
 // these generally referer to higher order functions
 // that take functions as parameters
+// Repetition is frequently done with these combinators
 
 val ll = List(1,2,3)
 

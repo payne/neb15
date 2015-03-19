@@ -1,4 +1,5 @@
-// List comprehension
+// List comprehension based on set comprehension in mathematics
+// elements of the list are paired together into a new list.
 
 //List(1,2)
 //List('a','b','c')
