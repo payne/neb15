@@ -22,6 +22,14 @@ id { x =>
 
 //TODO - if/else example(s)
 
+// if else is kind of like C's ternary operator -- they return a value
+// unlike if statements in scala
+
+// there should be a blue screen (principles) on if expressions
+// be careful about what is being evaluated.
+// comparison -- greater than, less than -- if is appropriate
+// if equivalence, then you should be wary -- that's a red flag
+// they are often used where not appropriate
 
 
 
