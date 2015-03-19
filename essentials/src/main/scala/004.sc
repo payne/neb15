@@ -2,6 +2,8 @@
 
 // a closure is a function that contains a free variable that is packaged
 // with the function that is returned.   Here, factor is the free variable.
+// Peter Landin is very responsible for the term closure and many of these
+// concepts -- per Peter.
 val factor = 3
 val triple = (x: Double) => x * factor
 
