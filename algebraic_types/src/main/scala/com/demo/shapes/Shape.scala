@@ -1,5 +1,6 @@
 package com.demo.shapes
 
+// sealed means you can not extend this trait in any file other than this one
 sealed trait Shape
 case class Circle(radius: Double) extends Shape
 case class Rectangle(length: Double, width: Double) extends Shape
