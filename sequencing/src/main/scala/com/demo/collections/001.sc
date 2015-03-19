@@ -15,6 +15,7 @@ val foo = List(1,2).map(n => List('a', 'b', 'c').map( ch => (n, ch)))
 // List(List((1,a), (1,b), (1,c)), List((2,a), (2,b), (2,c)))
 
 foo.flatten
+// the output is
 // List((1,a), (1,b), (1,c), (2,a), (2,b), (2,c))
 
 List(1,2).flatMap( n => List('a','b','c').map( ch => (n,ch)))
