@@ -1,3 +1,6 @@
+// Eric says this is the gnarliest of the day.
+// Nice story from Eric about denotational semantics 
+
 type State = Int
 type M[A] = State => (A, State)
 def pure[A](a: A): M[A] = (m:State) => (a, m)
