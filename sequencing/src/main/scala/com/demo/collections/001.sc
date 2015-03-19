@@ -1,6 +1,8 @@
 // List comprehension based on set comprehension in mathematics
 // elements of the list are paired together into a new list.
 
+// do not try to make a fluent API in scala!
+
 //List(1,2)
 //List('a','b','c')
 
