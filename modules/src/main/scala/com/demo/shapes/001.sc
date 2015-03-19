@@ -6,7 +6,9 @@
 // The two things here are expressions and
 // immutable name bindings.
 object Circle {
-  val myPi = 3.14
+  // protected works the same as java
+  // private too
+  private val myPi = 3.14
 
   def area(radius: Double): Double = {
     radius * radius * myPi
