@@ -39,6 +39,8 @@ object RomanNum extends RomanNumerable[Roman] {
       y <- fromRoman(b)
     } yield x + y
 
+    // good idiomatic scala here
+    // using a combinator instead of pattern matching.
     res.flatMap(toRoman)
   }
 
