@@ -1,3 +1,7 @@
+
+// Eric says he is not a TDD disciple
+// Says this turns out to be a common TDD kata/koan
+
 package com.demo.one
 
 import RomanNum._
