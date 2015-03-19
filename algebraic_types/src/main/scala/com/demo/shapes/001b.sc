@@ -1,5 +1,9 @@
 // Stringly typed
 
+// Notion of not representing data with strings
+// Rather representing the data with the type system
+// e.g. gender as an enumerated type
+
 case class Person(first: String, last: String, address: String, age: Int, ssn: String)
 
 val p = Person("Fred", "Smith", "123 Main", 25, "123-45-6789")
