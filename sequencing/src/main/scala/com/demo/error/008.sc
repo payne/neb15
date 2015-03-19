@@ -8,6 +8,8 @@ import Scalaz._
 // The library scalaz helps with this!
 // It has a type called disjunction which is a monad
 
+// monad
+
 // you'll see people use try types.
 // But you'll not use a try type in production.
 // Rather you'll use this from the scalaz
@@ -17,6 +19,7 @@ val bad = "Failed!".left[Int]
 val good2 = \/-(127)
 val bad2 = -\/("bad")
 
+// for comprehension
 for {
   a <- good
   b <- good2
