@@ -10,5 +10,6 @@ class Circle3(radius: Double) {
 }
 
 object Circle3 {
+  // apply is a special name.
   def apply(radius: Double) = new Circle3(radius)
 }
