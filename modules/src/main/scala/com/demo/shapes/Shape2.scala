@@ -1,5 +1,7 @@
 package com.demo.shapes
 
+// Ability to extend multiple traits is referred to as mixins.
+
 trait Shape2 {
   def area: Double
   def perimeter: Double
