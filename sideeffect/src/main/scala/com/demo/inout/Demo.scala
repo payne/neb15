@@ -23,6 +23,7 @@ object Demo {
         try {
           val file = Source.fromFile(x).mkString
           // Entry into program here
+          // No more side effects beyond this point
           println("done")
         } catch {
           case ex: FileNotFoundException => println("Not found: " + x)
