@@ -1,5 +1,7 @@
 package com.demo.shapes
 
+
+// smells like a java interface for the moment.
 trait Shape {
   def area: Double
   def perimeter: Double
