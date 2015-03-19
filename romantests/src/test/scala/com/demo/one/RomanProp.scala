@@ -6,6 +6,9 @@ import org.scalacheck.Prop.forAll
 
 
 // ScalaCheck is another style of testing library
+// in property based programming, identifying the properties
+// is not easy.   Eric's suggestion (which he implies will help some but not totally)
+// is to look for identifies like we see below with commutative property
 
 object RomanProp extends Properties("RomanNum") {
 
@@ -16,13 +19,17 @@ object RomanProp extends Properties("RomanNum") {
 
   property("Use cases for fromRoman") = {
     fromRoman("IV") == 4 &&
-      fromRoman("MMXV") == 2015
+      fromRoman("MMXV") == 2015 &&
+    fromRoman("IIII") == 4
+    // this is because Eric did not implement all of the roman numeral spec
   }
 
-//  property("Commutative property of Roman addition") = forAll {
-//    (a: Roman, b: Roman) => {
-//      add(a,b) == add(b,a)
-//    }
-//  }
+  // Here it automatically generates input data
+  // Since roman is really a string, this is a problem!
+  property("Commutative property of Roman addition") = forAll {
+    (a: Roman, b: Roman) => {
+      add(a,b) == add(b,a)
+    }
+  }
 
 }
