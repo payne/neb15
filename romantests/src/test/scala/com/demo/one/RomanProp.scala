@@ -5,6 +5,8 @@ import org.scalacheck.Properties
 import org.scalacheck.Prop.forAll
 
 
+// ScalaCheck is another style of testing library
+
 object RomanProp extends Properties("RomanNum") {
 
   property("Use cases for toRoman") = {
