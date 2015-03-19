@@ -1,4 +1,7 @@
 
+// bind now becomes flatMap
+
+
 object State {
   def apply[S,A](a: A) = new State((s:S) => (a, s))
 }
