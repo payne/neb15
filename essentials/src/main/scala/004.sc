@@ -14,21 +14,23 @@ triple(10)
 def mulBy(factor: Double) = {
   def foo(x: Int) = x * factor
   foo _
+  // just above, because foo is done via def the _ is required when
+  // returning a function.
 }
 
 val tripleB = mulBy(3)
 
 tripleB(10)
 
-//mulBy(3)(10)
+mulBy(3)(10)
 
 // Curried function
-//def mulBy(factor: Double)(x: Int) = x * factor
+def mulByC(factor: Double)(x: Int) = x * factor
 
-//mulBy(3)(10)
+mulByC(3)(10)
 
 // Partial application
-//val triple = mulBy(3) _
+val tripleC = mulByC(3) _
 
-//triple(10)
+tripleC(10)
 
