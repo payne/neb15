@@ -1,3 +1,7 @@
+// map foldRight foldLeft are combinators
+// these generally referer to higher order functions
+// that take functions as parameters
+
 val ll = List(1,2,3)
 
 ll.map(x => x*x)
@@ -14,7 +18,10 @@ ll.foldLeft(1)((x:Int, y:Int) => x * y)
 
 import scala.collection.immutable.StringOps
 val s = "MMXV"
+// is s a valid roman number?
+s.map("MDCLXVI".contains(_))
 s.map("MDCLXVI".contains(_)).foldLeft(true)(_ && _)
 
+// the above broken out a bit
 "MDCLXVI".contains("X")
 s.map("MDCLXVI".contains(_))
