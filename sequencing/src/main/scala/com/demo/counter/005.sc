@@ -24,6 +24,8 @@ def sq(a: Int) = State[Int,Int]((i: Int) => (a*a, i + 1))
 ((x: Int) => State(x).flatMap(sq).flatMap(sq))(2).m(0)
 
 
+// we get a for comprehension for free!
+
 val f = for {
   x <- sq(2)
   y <- sq(x)
