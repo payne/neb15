@@ -3,10 +3,15 @@
 
 // do not try to make a fluent API in scala!
 
+// it is idomatic for code to look different when using the collections API
+// than when you're using your own code.
+
 //List(1,2)
 //List('a','b','c')
 
 val foo = List(1,2).map(n => List('a', 'b', 'c').map( ch => (n, ch)))
+// the output is:
+// TODO: Step through this!!!
 // List(List((1,a), (1,b), (1,c)), List((2,a), (2,b), (2,c)))
 
 foo.flatten
