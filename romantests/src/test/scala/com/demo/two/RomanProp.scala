@@ -22,7 +22,7 @@ object RomanProp extends Properties("RomanNum") {
       fromRoman(Roman("MMXV")) == Some(2015)
   }
 
-
+// Here we are auto-generating inputs.   By default it generates 100 values
   property("Commutative property of Roman addition") = forAll(romans,romans) {
       (a: Option[Roman], b: Option[Roman]) => {
         add(a,b) == add(b,a)
