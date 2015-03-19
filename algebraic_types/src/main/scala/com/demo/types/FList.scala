@@ -1,3 +1,5 @@
+// functional approach to implementing a list
+
 package com.demo.types
 
 // This is a sum type
