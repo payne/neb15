@@ -26,6 +26,7 @@ object RomanProp extends Properties("RomanNum") {
 
   // Here it automatically generates input data
   // Since roman is really a string, this is a problem!
+  // See the two folder for a partially done fix to this.
   property("Commutative property of Roman addition") = forAll {
     (a: Roman, b: Roman) => {
       add(a,b) == add(b,a)
