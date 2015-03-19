@@ -17,6 +17,7 @@ def dbl(a: Int): M[Int] = (i: Int) => (2*a, i+1)
 /////////////////////////
 /////////////////////////
 // and now on the bottom.....
+// show that the expected rules are still followed
 
 // Left Identity
 // bind(pure(x), f) is the same thing as f(x)
@@ -36,6 +37,7 @@ m(1)(3)
 bind(bind(m(0), sq), dbl)(2)
 bind(m(0), (a: Int) => bind(sq(a), (b: Int) => dbl(b)))(2)
 
+// all of this gives us a monad.
 
 
 
