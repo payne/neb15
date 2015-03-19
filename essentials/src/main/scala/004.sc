@@ -24,7 +24,8 @@ tripleB(10)
 
 mulBy(3)(10)
 
-// Curried function
+// Curried function -- a syntactic devise for
+// def mulBy(factor: Double) = (x: Double) => x * factor
 def mulByC(factor: Double)(x: Int) = x * factor
 
 mulByC(3)(10)
