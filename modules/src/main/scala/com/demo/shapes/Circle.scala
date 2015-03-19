@@ -1,7 +1,7 @@
 // packages are a little different than in java.
 // Here we are using it in a similar way.
 // nested folders in the file system
-// namespaces.
+// namespaces.   More later or see the documentation/books.
 
 package com.demo.shapes
 
