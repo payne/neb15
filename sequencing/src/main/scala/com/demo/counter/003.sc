@@ -1,3 +1,4 @@
+// And now, in a object oriented way by moving a parameter to the outside
 
 type State = Int
 type M[A] = State => (A, State)

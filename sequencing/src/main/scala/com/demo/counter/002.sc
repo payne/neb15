@@ -33,8 +33,10 @@ def bind[A,B](m: M[A], k: A => M[B]): M[B] = {
   }
 }
 
+// this is a squaring function
 def sq(a: Int): M[Int] = (i: Int) => (a*a, i+1)
 
+// the outputs are the value and the number of operations
 ((s: Int) => bind(pure(s),sq)(0))(2)
 ((s: Int) => bind(bind(pure(s), sq), sq)(0))(2)
 ((s: Int) => bind(bind(bind(pure(s), sq), sq), sq)(0))(2)
