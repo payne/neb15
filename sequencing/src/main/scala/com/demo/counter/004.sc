@@ -1,4 +1,6 @@
 
+// And now, in a object oriented way by moving a parameter to the outside
+
 object State {
   def apply[S,A](a: A) = new State((s:S) => (a, s))
 }

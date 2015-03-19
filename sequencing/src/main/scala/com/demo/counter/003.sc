@@ -1,4 +1,3 @@
-// And now, in a object oriented way by moving a parameter to the outside
 
 type State = Int
 type M[A] = State => (A, State)
@@ -13,6 +12,11 @@ def bind[A,B](m: M[A], k: A => M[B]): M[B] = {
 
 def sq(a: Int): M[Int] = (i: Int) => (a*a, i+1)
 def dbl(a: Int): M[Int] = (i: Int) => (2*a, i+1)
+
+
+/////////////////////////
+/////////////////////////
+// and now on the bottom.....
 
 // Left Identity
 // bind(pure(x), f) is the same thing as f(x)
