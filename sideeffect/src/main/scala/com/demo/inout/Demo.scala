@@ -17,6 +17,8 @@ object Demo {
   def process(args: List[String]): Boolean = {
     args match {
       case Nil => true // true if everything processed successfully
+        // syntax: first element is "-f" next element goes into x
+        // rest of the list into rest
       case "-f" :: x :: rest =>
         try {
           val file = Source.fromFile(x).mkString
