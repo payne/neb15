@@ -30,7 +30,7 @@ def mulByC(factor: Double)(x: Int) = x * factor
 
 mulByC(3)(10)
 
-// Partial application
+// Partial application -- note the _ again
 val tripleC = mulByC(3) _
 
 tripleC(10)
