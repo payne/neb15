@@ -38,6 +38,17 @@ bind(bind(m(0), sq), dbl)(2)
 bind(m(0), (a: Int) => bind(sq(a), (b: Int) => dbl(b)))(2)
 
 // all of this gives us a monad.
+// now we can appreciate that a for comprehension
+// is a monad
+
+
+// option type is also a monad
+
+
+// Scala has the notiion of future for concurrency
+// But this class does not cover futures.
+
+// monads can work with a for comprehension and be composed together
 
 
 
