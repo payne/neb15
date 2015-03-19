@@ -20,6 +20,7 @@ val age = Some(Age(30))
 // try and see what happens
 // if one is none, the whole thing is none
 // this is the essence of error hanlding in scala
+// this is better than null checking!
 //val age = None
 
 for {

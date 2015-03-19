@@ -1,5 +1,6 @@
 //http://tonymorris.github.io/blog/posts/scalaoption-cheat-sheet/
 
+
 val opt: Option[Int] = Some(3)
 def foo(x: Int): Option[Int] = Some(x)
 
